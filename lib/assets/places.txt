@@ -1,49 +1,49 @@
-1|Zuni Café|www.zunicafe.com
-1|Restaurant Gary Danko|www.garydanko.com
+1|Zuni Café|http://www.zunicafe.com
+1|Restaurant Gary Danko|http://www.garydanko.com
 1|Chapeau!|http://www.chapeausf.com
-1|Absinthe Brasserie & Bar|www.absinthe.com
-1|Kokkari Estiatorio|www.kokkari.com
-1|Boulevard|www.boulevardrestaurant.com
-1|The House|www.thehse.com
-1|La Folie|www.lafolie.com
-1|Jardinière|www.jardiniere.com
-1|Delfina|www.delfinasf.com
+1|Absinthe Brasserie & Bar|http://www.absinthe.com
+1|Kokkari Estiatorio|http://www.kokkari.com
+1|Boulevard|http://www.boulevardrestaurant.com
+1|The House|http://www.thehse.com
+1|La Folie|http://www.lafolie.com
+1|Jardinière|http://www.jardiniere.com
+1|Delfina|http://www.delfinasf.com
 1|State Bird Provisions|http://statebirdsf.com
-1,3|NOPA|www.nopasf.com
-1|Spruce|www.sprucesf.com
+1,3|NOPA|http://www.nopasf.com
+1|Spruce|http://www.sprucesf.com
 1|Fleur De Lys|http://www.hubertkeller.com/restaurants/fleur-de-lys.html
 1|Firefly|http://www.fireflyrestaurant.com
-2|Philz Coffee|www.philzcoffee.com
+2|Philz Coffee|http://www.philzcoffee.com
 2|Blue Bottle Coffee|http://bluebottlecoffee.net
-2|Four Barrel Coffee|www.fourbarrelcoffee.com
+2|Four Barrel Coffee|http://www.fourbarrelcoffee.com
 2|Sightglass Coffee|http://sightglasscoffee.com
-2|Epicenter Cafe|www.epicentercafe.com
+2|Epicenter Cafe|http://www.epicentercafe.com
 2|901 Columbus Cafe|http://www.901columbus.com
 2|La Boulange|http://laboulangebakery.com
-3|Super Duper Burgers|www.superdupersf.com
+3|Super Duper Burgers|http://www.superdupersf.com
 3|Umami Burger|http://umamiburger.com
-3|Roam Artisan Burgers|www.roamburgers.com
+3|Roam Artisan Burgers|http://www.roamburgers.com
 3|Marlowe|http://marlowesf.com
-3|In-N-Out Burger|www.in-n-out.com
-3|Burgermeister|www.burgermeistersf.com
+3|In-N-Out Burger|http://www.in-n-out.com
+3|Burgermeister|http://www.burgermeistersf.com
 3|Chez Maman|http://chezmamansf.com
 3|Gott's Roadside|http://gotts.com
-3|Burger Bar|www.burgerbarsf.com
-3|Gamine|www.gaminesf.com
-3|Pearl's Deluxe Burgers|www.pearlsdeluxe.com
+3|Burger Bar|http://www.burgerbarsf.com
+3|Gamine|http://www.gaminesf.com
+3|Pearl's Deluxe Burgers|http://www.pearlsdeluxe.com
 4|Tony's Pizza Napoletana|http://tonyspizzanapoletana.com
 4|Zero Zero|http://zerozerosf.com
 4|Delfina|http://www.delfinasf.com/restaurant
-4|Albona Ristorante Istriano|www.albonarestaurant.com
-4|Pizzeria Delfina|www.pizzeriadelfina.com
-4|The Stinking Rose|www.thestinkingrose.com
-4|A 16|www.a16sf.com
+4|Albona Ristorante Istriano|http://www.albonarestaurant.com
+4|Pizzeria Delfina|http://www.pizzeriadelfina.com
+4|The Stinking Rose|http://www.thestinkingrose.com
+4|A 16|http://www.a16sf.com
 4|flour + water|http://flourandwater.com
-4|Sotto Mare|www.sottomaresf.com
-4|SPQR|www.spqrsf.com
-4|Tommaso's Ristorante Italiano|www.tommasosnorthbeach.com
+4|Sotto Mare|http://www.sottomaresf.com
+4|SPQR|http://www.spqrsf.com
+4|Tommaso's Ristorante Italiano|http://www.tommasosnorthbeach.com
 4|E' Tutto Qua|http://etuttoqua.com
-4|Uva Enoteca|www.uvaenoteca.com
-4|Panta Rei Restaurant|www.pantareirestaurant.com
-4|Cotogna|www.cotognasf.com
-4|Trattoria Contadina|www.trattoriacontadina.com
+4|Uva Enoteca|http://www.uvaenoteca.com
+4|Panta Rei Restaurant|http://www.pantareirestaurant.com
+4|Cotogna|http://www.cotognasf.com
+4|Trattoria Contadina|http://www.trattoriacontadina.com

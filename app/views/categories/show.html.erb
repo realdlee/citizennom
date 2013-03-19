@@ -1,0 +1,4 @@
+<h1>Best <%= @category.name %></h1>
+<%- @sorted_places.each do |place| %>
+  <li><%= place.name %> | <%= link_to place.website, place.website%></li>
+<% end %>

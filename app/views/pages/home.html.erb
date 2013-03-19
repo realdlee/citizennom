@@ -2,26 +2,28 @@
 <p>Vote on the best food in San Francisco</p>
 
 <div class="center">
-  <h2 class="center"><%= link_to "Best Restaurant", "#" %> </h2>
-  <div class="food block_center">
+  <h2 class="center"><%= link_to "Best Restaurant", category_path(Category.find(1)) %> </h2>
+  <div class="food block_center space2">
     <%=image_tag("restaurant.jpg", alt: "") %>
   </div>
   <ul class="block_center">
     <% 3.times do |n| %>
-      <li><%=n+1%>. <%= link_to @top_restaurants[n].name, "#" %></li>
+      <li class="space0">
+        <%=n+1%>. <%= link_to @top_restaurants[n].name, "#" %>
+      </li>
     <%end%>
   </ul>
   <small><%=link_to "See More", "#"%></small>
 </div>
 
 <div class="center">
-  <h2><%= link_to "Best Coffee", "#" %> </h2>
+  <h2><%= link_to "Best Coffee", category_path(Category.find(2)) %> </h2>
   <div class="food block_center">
     <%=image_tag("coffee.jpg", alt: "") %>
   </div>
   <ul class="block_center">
     <% 3.times do |n| %>
-      <li>
+      <li class="space0">
           <%=n+1%>. <%=link_to @top_coffee[n].name, "#" %>
       </li>
     <% end %>
@@ -31,22 +33,24 @@
 
 
 <div class="center">
-  <h2><%= link_to "Best Italian", "#" %> </h2>
+  <h2><%= link_to "Best Italian", category_path(Category.find(3)) %> </h2>
   <div class="food block_center"><%=image_tag("italian.jpg", alt: "") %></div>
   <ul>
     <% 3.times do |n| %>
-      <li><%=n+1%>. <%=link_to @top_italian[n].name, "#" %></li>
+      <li class="space0">
+        <%=n+1%>. <%=link_to @top_italian[n].name, "#" %></li>
      <% end %>
    </ul>
    <small><%=link_to "See More", "#"%></small>
  </div>
 
  <div class="center">
-   <h2><%= link_to "Best Burger", "#" %> </h2>
+   <h2><%= link_to "Best Burger", category_path(Category.find(4)) %> </h2>
  <div class="food block_center"><%=image_tag("burger.jpg", alt: "") %></div>
  <ul>
    <% 3.times do |n| %>
-     <li><%=n+1%>. <%=link_to @top_burger[n].name, "#"%></li>
+      <li class="space0">
+      <%=n+1%>. <%=link_to @top_burger[n].name, "#"%></li>
  <% end %>
  </ul>
  <small><%=link_to "See More", "#"%></small>

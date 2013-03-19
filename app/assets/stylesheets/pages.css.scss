@@ -2,6 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color: #FAF9F4;
+}
+
+.space0 { margin-bottom: 6.25px; }
+.space1 { margin-bottom: 12.5px; }
+.space2 { margin-bottom: 25px; }
+.space3 { margin-bottom: 37.5px; }
+.space4 { margin-bottom: 50px; }
+
 .food {
   border: 1px solid #fff;
   background-color: white;
