@@ -1,3 +1,33 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.food {
+  border: 1px solid #fff;
+  background-color: white;
+  box-shadow: 0 1px 4px #ccc;
+  width: 300px;
+  height: 300px;
+  padding: 3px;
+}
+
+.food img{
+  border-radius: 4px;
+  height: 300px;
+  width: 300px;
+}
+
+.center {
+  text-align: center;
+}
+
+.block_center {
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+ul li {
+    list-style: none;
+    margin-right: 300px;
+}

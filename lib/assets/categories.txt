@@ -1,0 +1,7 @@
+Restaurant
+Coffee
+Burger
+Italian
+Pizza
+Ice Cream
+Brunch

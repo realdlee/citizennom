@@ -1,0 +1,50 @@
+<h1>Citizen Nom</h1>
+<p>Vote on the best food in San Francisco</p>
+
+<div class="center">
+  <h2><%= link_to "Best Restaurant", "#" %> </h2>
+<div class="food block_center">
+  <%=image_tag("restaurant.jpg", alt: "") %>
+</div>
+<ul>
+  <% @categories[0].places.each do |place| %>
+    <li>1. <%=place.name%></li>
+    <li>2.</li>
+    <li>3.</li>
+    <small><%=link_to "See More", "#"%></small>
+  <%end%>
+</ul>
+</div>
+
+<div class="center">
+  <h2><%= link_to "Best Coffee", "#" %> </h2>
+<div class="food block_center"><%=image_tag("coffee.jpg", alt: "") %></div>
+<ul>
+<% @categories[1].places do |place| %>
+  <li>1. <%=place.name%></li>
+  <li>2.</li>
+  <li>3.</li>
+<% end %>
+</ul>
+</div>
+
+<div class="center">
+  <h2><%= link_to "Best Italian", "#" %> </h2>
+  <div class="food block_center"><%=image_tag("italian.jpg", alt: "") %></div>
+  <ul>
+    <li>1.</li>
+    <li>2.</li>
+    <li>3.</li>
+  </ul>
+</div>
+
+<div class="center">
+  <h2><%= link_to "Best Burger", "#" %> </h2>
+<div class="food block_center"><%=image_tag("burger.jpg", alt: "") %></div>
+<ul>
+  <li>1.</li>
+  <li>2.</li>
+  <li>3.</li>
+</ul>
+</div>
+<%=link_to "Sign up", new_user_registration_path%>
