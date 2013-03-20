@@ -5,4 +5,8 @@ class Category < ActiveRecord::Base
 
   attr_accessible :name
   validates_presence_of :name
+
+  def to_param
+    "#{id}+Best-#{name}".pluralize+".html"
+  end
 end
