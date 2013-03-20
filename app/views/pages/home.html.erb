@@ -1,6 +1,4 @@
-<div data-role="header" data-position="fixed">
-  <h1>Citizen Nom</h1>
-</div>
+
 <h3 class="center">Discover the Best Food in San Francisco</p>
 <div class="center">
   <h2 class="center"><%= link_to "Best Restaurant", category_path(Category.find(1)) %> </h2>
@@ -11,10 +9,11 @@
     <% 3.times do |n| %>
       <li class="space0">
         <%=n+1%>. <%= link_to @top_restaurants[n].name, "#" %>
+        <%= link_to "Vote", "#", :"data-role"=> "button", :"data-inline"=> "true", :"data-mini"=> "true", :"data-icon"=>"check" %>
       </li>
     <%end%>
   </ul>
-  <small><%=link_to "See More", category_path(Category.find(1)), :"data-role"=> "button", :"data-theme"=> "b"%></small>
+  <small><%=link_to "See More", category_path(Category.find(1)), :"data-role"=> "button", :"data-theme"=> "b", :"data-corners"=> "false"%></small>
 </div>
 
 <div class="center">
@@ -26,10 +25,11 @@
     <% 3.times do |n| %>
       <li class="space0">
           <%=n+1%>. <%=link_to @top_coffee[n].name, "#" %>
+                  <%= link_to "Vote", "#", :"data-role"=> "button", :"data-inline"=> "true", :"data-mini"=> "true", :"data-icon"=>"check" %>
       </li>
     <% end %>
   </ul>
-  <small><%=link_to "See More", category_path(Category.find(2)), :"data-role"=> "button", :"data-theme"=> "b"%></small>
+  <small><%=link_to "See More", category_path(Category.find(2)), :"data-role"=> "button", :"data-theme"=> "b", :"data-corners"=> "false"%></small>
 </div>
 
 
@@ -40,9 +40,10 @@
     <% 3.times do |n| %>
       <li class="space0">
         <%=n+1%>. <%=link_to @top_italian[n].name, "#" %></li>
+        <%= link_to "Vote", "#", :"data-role"=> "button", :"data-inline"=> "true", :"data-mini"=> "true", :"data-icon"=>"check" %>
      <% end %>
    </ul>
-  <small><%=link_to "See More", category_path(Category.find(3)), :"data-role"=> "button", :"data-theme"=> "b"%></small>
+  <small><%=link_to "See More", category_path(Category.find(3)), :"data-role"=> "button", :"data-theme"=> "b", :"data-corners"=> "false"%></small>
  </div>
 
  <div class="center">
@@ -52,9 +53,10 @@
    <% 3.times do |n| %>
       <li class="space0">
       <%=n+1%>. <%=link_to @top_burger[n].name, "#"%></li>
+      <%= link_to "Vote", "#", :"data-role"=> "button", :"data-inline"=> "true", :"data-mini"=> "true", :"data-icon"=>"check" %>
  <% end %>
  </ul>
-  <small><%=link_to "See More", category_path(Category.find(4)), :"data-role"=> "button", :"data-theme"=> "b"%></small>
+  <small><%=link_to "See More", category_path(Category.find(4)), :"data-role"=> "button", :"data-theme"=> "b", :"data-corners"=> "false"%></small>
  </div>
  <%=link_to "Sign up", new_user_registration_path%>
 

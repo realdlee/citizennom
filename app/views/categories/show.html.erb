@@ -1,4 +1,4 @@
-<h1 class="center">Best <%= @category.name.pluralize %></h1>
+<h1 class="center">Best <%= @category.name %></h1>
 <ol>
 <%- @sorted_places.each do |place| %>
   <li class="space0"><%= place.name %> | <%= link_to place.website, place.website%></li>
