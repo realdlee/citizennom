@@ -1,6 +1,7 @@
-class PlaceCategories < ActiveRecord::Base
-  attr_accessible :category_id, :place_id
+# class PlaceCategories < ActiveRecord::Base
+#   attr_accessible :category_id, :place_id
 
-  belongs_to :place
-  belongs_to :category
-end
+#   belongs_to :place
+#   belongs_to :category
+#   # acts_as_voteable
+# end

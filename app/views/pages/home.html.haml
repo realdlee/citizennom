@@ -1,0 +1,23 @@
+%h2.center The Best Food in San Francisco
+
+.center
+  %h2.center=link_to "Best Restaurant", category_path(Category.find(1))
+  .food
+    =image_tag("restaurant.jpg", alt: "")
+  %ul.block_center
+    - 3.times do |n|
+      %li.space1
+        #{n+1}. #{link_to @top_restaurants[n].name, place_path(@top_restaurants[n])}
+        .center
+          = link_to "Vote", vote_up_place_category_path(PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1)), method: :post, :"data-role"=> "button", :"data-inline"=> "true", :"data-mini"=> "true", :"data-icon"=>"check"
+          = PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1).votes.size
+  %small
+    =link_to "See More", category_path(Category.find(1)), :"data-role"=> "button", :"data-theme"=> "b", :"data-corners"=> "false"
+
+-if user_signed_in?
+  Voting as #{current_user.email}
+  %br
+  =link_to "Sign out", destroy_user_session_path, method: :delete, id: "sign_out"
+-else
+  =link_to "Sign up", new_user_registration_path
+

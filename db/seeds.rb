@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+PlaceCategory.delete_all
+ActiveRecord::Base.connection.reset_pk_sequence!(PlaceCategory.table_name)
 
 Category.delete_all
 ActiveRecord::Base.connection.reset_pk_sequence!(Category.table_name)

@@ -2,6 +2,19 @@ Citizennom::Application.routes.draw do
   root to: "pages#home"
   devise_for :users
   resources :categories
+  get 'users/show/:id' => 'users#show', as: "user"
+
+  resources :places do
+    # member do
+    #   post :vote_up
+    # end
+  end
+
+  resources :place_category do
+    member do
+      post :vote_up
+    end
+  end
   # get '/best-restaurants', to: "categories/1"
 
   # The priority is based upon order of creation:

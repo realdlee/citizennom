@@ -11,7 +11,17 @@
 <div data-role="header" data-position="fixed">
   <h1>Citizen NOM</h1>
 </div>
-<%= yield %>
 
+<%- flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}", :class => "ui-body ui-body-e" %>
+<% end %>
+
+<%= yield %>
+    <%-if Rails.env.development?%>
+      <%= debug params %>
+      <%- if current_user %>
+
+      <% end %>
+    <% end %>
 </body>
 </html>

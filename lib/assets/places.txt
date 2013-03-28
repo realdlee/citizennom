@@ -20,6 +20,10 @@
 2|Epicenter Cafe|http://www.epicentercafe.com
 2|901 Columbus Cafe|http://www.901columbus.com
 2|La Boulange|http://laboulangebakery.com
+2|Réveille Coffee Co.|http://reveillecoffee.com
+2|Caffe Roma Coffee Roasting Co|http://www.cafferoma.com
+2|Beacon Coffee & Pantry|http://www.beacon-sf.com
+2|Bread and Cocoa|http://breadandcocoa.com
 3|Super Duper Burgers|http://www.superdupersf.com
 3|Umami Burger|http://umamiburger.com
 3|Roam Artisan Burgers|http://www.roamburgers.com
