@@ -18,7 +18,7 @@
     %link(href="images/apple-touch-icon.png" rel="apple-touch-icon-precomposed")
 
 
-  %body
+  %body{class: params[:controller] + " " + params[:action]}
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
@@ -36,7 +36,8 @@
                 %li=link_to "Log in", new_user_session_path
                 %li=link_to "Sign up", new_user_registration_path
                 %li= link_to "3", "#"
-    = render 'pages/carousel'
+    -if (params[:controller]=='pages' && params[:action]=='home')
+      = render 'pages/carousel'
     .container
       .content
         .row
