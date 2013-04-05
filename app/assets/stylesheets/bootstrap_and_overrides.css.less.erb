@@ -1,10 +1,11 @@
 @import "twitter/bootstrap/bootstrap";
 body {
-	padding-top: 60px;
+	padding-top: 20px;
 }
 
-@import "twitter/bootstrap/responsive";
 
+
+@import "twitter/bootstrap/responsive";
 // Set the correct sprite paths
 @iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
 @iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
@@ -57,6 +58,14 @@ body {
 
 }
 
+.navbar .brand {
+  position: relative;
+  z-index: 20;
+  width: 160px;
+  height:20px;
+  background-image: url(<%= asset_path 'logo.png' %>);
+}
+
 /* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
   border: 0;
@@ -83,12 +92,16 @@ body {
   margin-top: 10px;
 }
 
+.moveUp {
+  position: relative;
+  top: 3px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .carousel .container {
@@ -265,4 +278,8 @@ body {
     line-height: 1.5;
   }
 
+}
+
+li {
+  list-style: none;
 }

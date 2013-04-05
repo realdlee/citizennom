@@ -8,7 +8,6 @@ gem 'rails', '3.2.12'
 gem 'pg'
 gem 'devise'
 gem 'haml-rails'
-gem 'jquery_mobile_rails'
 gem 'omniauth-facebook'
 gem 'thumbs_up'
 gem "twitter-bootstrap-rails"

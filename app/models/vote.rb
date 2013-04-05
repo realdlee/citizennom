@@ -19,4 +19,11 @@ class Vote < ActiveRecord::Base
     # current_category_id = PlaceCategory.find(self.voteable_id).category_id
   #   if current_user's array of categories it voted on includes? current_category_id
   # end
+  # def self.vote_total(category_id)
+  #   sum=0
+  #   PlaceCategory.where(category_id: category_id).each do |place_category|
+  #     sum+=place_category.votes.size
+  #   end
+  # end
+
 end

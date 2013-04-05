@@ -6,6 +6,14 @@ class Category < ActiveRecord::Base
   attr_accessible :name
   validates_presence_of :name
 
+  def self.vote_total(category_id)
+    sum=0
+    PlaceCategory.where(category_id: category_id).each do |place_category|
+      sum+=place_category.votes.size
+    end
+    return sum
+  end
+
   def to_param
     "#{id}-best-#{name}.html"
   end
