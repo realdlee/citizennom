@@ -8,9 +8,19 @@
     .span4
       %img.img-circle{"data-src" => "holder.js/140x140"}/
       %h2=link_to "Best Coffee", category_path(Category.find(2))
-      %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+      %ul.topthree
+      - 3.times do |n|
+        %li.space1
+          %p.place_name
+          -if PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_coffee[n].id), 2).votes.present?
+            #{n+1}. #{@top_coffee[n].name} (#{((PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_coffee[n].id), 2).votes.size.to_f)/@coffee_votes_total.to_f*100).round}%)
+          -else
+            #{n+1}. #{@top_coffee[n].name}
+          .center
+            = link_to "Vote", vote_up_place_category_path(PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_coffee[n].id), 2)), method: :post, class: "btn btn-mini btn-vote", remote: true
+          .vote-message
       %p
-        %a.btn{:href => "#"} See More »
+        %a.btn.btn-warning{:href => category_path(Category.find(2))} See More  »
     / /.span4
     .span4
       %img.img-circle{"data-src" => "holder.js/140x140"}/
@@ -19,14 +29,27 @@
       - 3.times do |n|
         %li.space1
           %p
-            #{n+1}. #{@top_restaurants[n].name} (#{(PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1).votes.size.to_f)/@restaurant_votes_total.to_f*100}%)
+            #{n+1}. #{@top_restaurants[n].name} (#{((PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1).votes.size.to_f)/@restaurant_votes_total.to_f*100).round}%)
           .center
-            = link_to "Vote", vote_up_place_category_path(PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1)), method: :post, class: "btn btn-mini", remote: true
+            = link_to "Vote", vote_up_place_category_path(PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1)), method: :post, class: "btn btn-mini btn-vote", remote: true
+          .vote-message
+
       %p
-        %a.btn.btn-primary{:href => "#"} See More  »
+        %a.btn.btn-warning{:href => category_path(Category.find(1))} See More  »
     .span4
       %img.img-circle{"data-src" => "holder.js/140x140"}/
       %h2=link_to "Best Italian", category_path(Category.find(4))
-      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      %ul.topthree
+      - 3.times do |n|
+        %li.space1
+          %p.place_name
+          -if PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_italian[n].id), 4).votes.present?
+            #{n+1}. #{@top_italian[n].name} (#{((PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_italian[n].id), 4).votes.size.to_f)/@italian_votes_total.to_f*100).round}%)
+          -else
+            #{n+1}. #{@top_italian[n].name}
+          .center
+            = link_to "Vote", vote_up_place_category_path(PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_italian[n].id), 4)), method: :post, class: "btn btn-mini btn-vote", remote: true
+          .vote-message
       %p
-        %a.btn{:href => "#"} See More  »
+        %a.btn.btn-warning{:href => category_path(Category.find(4))} See More  »
+

@@ -26,16 +26,16 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href="#")
+          %a.brand(href=root_url)
           .container.nav-collapse
-            %ul.nav
+            %ul.nav.pull-right
               -if user_signed_in?
                 %li=link_to "Voting as #{current_user.email}", "#"
                 %li=link_to "Sign out", destroy_user_session_path, method: :delete, id: "sign_out"
               -else
                 %li=link_to "Log in", new_user_session_path
                 %li=link_to "Sign up", new_user_registration_path
-                %li= link_to "3", "#"
+
     -if (params[:controller]=='pages' && params[:action]=='home')
       = render 'pages/carousel'
     .container
@@ -45,10 +45,10 @@
             = bootstrap_flash
             = yield
       %footer
-        %p.pull-right
-          =link_to "Back to top", "#"
-
-        %p &copy; Citizen Nom 2013
+        %ul
+          %li=link_to "About", "#"
+          %li=link_to "Blog", "http://citizennom.tumblr.com"
+          %li &copy; Citizen Nom 2013
     /
       Javascripts
       \==================================================
