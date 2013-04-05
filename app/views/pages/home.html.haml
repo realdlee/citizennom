@@ -29,7 +29,10 @@
       - 3.times do |n|
         %li.space1
           %p
-            #{n+1}. #{@top_restaurants[n].name} (#{((PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1).votes.size.to_f)/@restaurant_votes_total.to_f*100).round}%)
+            -if PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1).votes.present?
+              #{n+1}. #{@top_restaurants[n].name} (#{((PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1).votes.size.to_f)/@restaurant_votes_total.to_f*100).round}%)
+            -else
+              #{n+1}. #{@top_restaurants[n].name}
           .center
             = link_to "Vote", vote_up_place_category_path(PlaceCategory.find_by_place_id_and_category_id(Place.find(@top_restaurants[n].id), 1)), method: :post, class: "btn btn-mini btn-vote", remote: true
           .vote-message
