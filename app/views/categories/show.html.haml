@@ -1,0 +1,8 @@
+%h1.center Best #{@category.name}
+%h3.center #{@votes} votes
+%ol
+- @sorted_places.each do |place|
+  %li.space0
+    #{place.name} | #{link_to place.website, place.website} | #{(((PlaceCategory.votes_for(place.id, @category.id).to_f)/@votes.to_f)*100).round(2)}%
+
+    = link_to "Vote", vote_up_place_category_path(PlaceCategory.find_by_place_id_and_category_id(place.id, @category.id)), method: :post, class: "btn btn-mini btn-vote", remote: true
